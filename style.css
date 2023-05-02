@@ -1,0 +1,269 @@
+.img {
+  background-image: url(./img/bckgrnd.png);
+  background-repeat: no-repeat;
+  width: 1500px;
+  height: 1000px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.navigation {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: space-between;
+  width: 400px;
+  margin-left: 200px;
+}
+
+.navigation__item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "Jost";
+}
+.navigation__item a:hover {
+  color: black;
+  font-weight: 600;
+}
+
+.hero .wrapper {
+  margin-top: 145px;
+  display: flex;
+}
+.wrapper__left {
+  max-width: 530px;
+}
+h1 {
+  font-size: 48px;
+  font-family: "Jost";
+  margin: 0;
+  line-height: 84px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.wrapper__left p {
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 39px;
+  letter-spacing: -0.66px;
+  margin-top: 24px;
+  font-family: "Jost";
+  font-weight: 400;
+}
+
+.action-bttn {
+  display: flex;
+  margin-left: 100px;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.wrapper__right {
+  position: relative;
+  width: 100%;
+}
+.wrapper__right img:first-child {
+  position: absolute;
+  top: -100px;
+  right: -80px;
+}
+.burger-menu {
+  display: none;
+}
+
+.services {
+  margin-top: 220px;
+}
+.section-title {
+  font-size: 46px;
+  font-family: "Jost";
+  font-weight: 700;
+  color: black;
+  margin: 0;
+}
+.section-title-p {
+  text-align: center;
+  color: #ababab;
+  font-family: "Jost";
+  font-size: 18px;
+}
+.services .section-title {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.services-list {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 100px;
+}
+.services-list__item {
+  max-width: 300px;
+  text-align: center;
+  margin: 0 40px;
+  justify-content: space-between;
+}
+.item__title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: -0.75px;
+  font-family: "Jost";
+  color: #000000;
+}
+.item__description {
+  font-size: 18px;
+  font-family: "Jost";
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.5px;
+  color: #b0b0b0;
+}
+.navbar h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+  color: red;
+}
+
+footer {
+  background-image: url(./img/footer_img.png);
+  background-repeat: no-repeat;
+  width: 1500px;
+  height: 1000px;
+  margin: 0 auto;
+}
+
+.container2 {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 250px;
+}
+
+.bottom_txt {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 167px;
+}
+
+.bottom_txt:first-child {
+  width: 1000px;
+}
+
+.bottom_left {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom_left h2 {
+  font-family: "Jost";
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.bottom__left h2 {
+  font-family: "Jost";
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.bottom__left p {
+  font-family: "Jost";
+  font-size: 12px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.line {
+  width: 100%;
+  border-top: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line h2 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Jost";
+  font-style: normal;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding: 0 40px;
+  }
+  .wrapper__right img:first-child {
+    width: 100%;
+    position: initial;
+  }
+  .services-list {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .navbar {
+    display: nones;
+  }
+  .hero .wrapper {
+    display: block;
+  }
+  .wrapper__right {
+    margin-top: 90px;
+  }
+  .wrapper__right img:first-child {
+    transform: scale(0.2);
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .navigation,
+  .burger-menu {
+    display: block;
+  }
+
+  .contact-us .wrapper {
+    display: block;
+  }
+  footer .navbar,
+  footer .navigation {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 42px;
+  }
+  .right__icons {
+    transform: scale(0.6);
+  }
+  .hero .wrapper {
+    margin-top: 70px;
+  }
+  .navigation {
+    width: auto;
+    display: none;
+  }
+}
